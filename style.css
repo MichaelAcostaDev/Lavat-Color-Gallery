@@ -262,3 +262,37 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+
+.footer-author {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-socials a {
+  color: var(--muted);
+  font-size: 20px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 520px) {
+  .footer-author {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
